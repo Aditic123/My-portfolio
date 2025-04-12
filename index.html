@@ -206,6 +206,43 @@
             color: #3498db;
         }
         
+        /* Certificates Section */
+        #certificates {
+            background-color: #f9f9f9;
+        }
+        
+        .certificates-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .certificate-item {
+            width: 300px;
+            text-align: center;
+        }
+        
+        .certificate-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certificate-caption {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
         /* Achievements Section */
         .achievements-container {
             display: grid;
@@ -366,6 +403,17 @@
             .contact-info {
                 margin-top: 40px;
             }
+            
+            .certificates-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            
+            .certificate-item {
+                width: 100%;
+                max-width: 350px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -378,6 +426,7 @@
                 <ul class="nav-links">
                     <li><a href="#" class="nav-link" data-section="home">Home</a></li>
                     <li><a href="#" class="nav-link" data-section="education">Education</a></li>
+                    <li><a href="#" class="nav-link" data-section="certificates">Certificates</a></li>
                     <li><a href="#" class="nav-link" data-section="achievements">Achievements</a></li>
                     <li><a href="#" class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
@@ -393,7 +442,13 @@
                     <img id="profilePic" src="myphoto.jpg" alt="My Profile" class="profile-logo">
                     <h1>Aditi Chandra</h1>
                     <h2>I am a FY b.tech student. welcome to my portfolio</h2>
-                    <p>I'm a passionate coder. I love Reading, Writing, Listening to music and solving logical ability questions</p>
+                    <p>I'm passionate about coding and constantly exploring ways to grow in the world of tech. Science—especially quantum physics—fascinates me, and I'm always eager to learn something new. I'm a curious mind, a lifelong learner, and someone who believes in blending creativity with logic.
+
+                        When I'm not coding, you'll probably find me experimenting in the kitchen, getting lost in a painting, immersed in a good book, or writing down my thoughts.
+                        
+                        Welcome to my portfolio—take a look around and get to know me and my work!
+                        
+                        </p>
                 </div>
             </div>
         </section>
@@ -426,6 +481,27 @@
                             <p class="date">2023 - 2024</p>
                             <p>Worked as discipline coordinator. Passed with 83.8%.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates">
+            <div class="container">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-container">
+                    <div class="certificate-item">
+                        <img src="cisco-certificate.jpg" alt="CISCO Certificate" class="certificate-img">
+                        <div class="certificate-caption">CISCO Python Certification</div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="painting-certificate.jpg" alt="Painting Certificate" class="certificate-img">
+                        <div class="certificate-caption">Painting Certificate</div>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="abacus-certificate.jpg" alt="Abacus Certificate" class="certificate-img">
+                        <div class="certificate-caption">Abacus Certificate</div>
                     </div>
                 </div>
             </div>
